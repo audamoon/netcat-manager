@@ -1,0 +1,21 @@
+{
+    "string_array": [
+        {
+            "string_name": "Заголовок услуги:",
+            "string_id": "nc_capfld_584",
+            "type":"h1"
+        }
+    ],
+    "text_array": [
+        {
+            "textarea_name": "Текст услуги:",
+            "textarea_id": "nc_capfld_628",
+            "type":"h1_text"
+        },
+        {
+            "textarea_name": "Текстовый блок 2:",
+            "textarea_id": "nc_capfld_586",
+            "type":"h2_text"
+        }
+    ]
+}

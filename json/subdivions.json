@@ -1,0 +1,32 @@
+{
+    "Лечение наркомании": {
+        "type":"",
+        "url":"",
+        "text_id":"",
+        "subdivisons" : [
+            {
+                "Лечение алкоголизма": {
+                    "type":"active/unactive",
+                    "url":"",
+                    "text_id":""
+                }
+                
+            },
+            {
+                "Лечение чего-то 2":{
+                    "type":"active/unactive",
+                    "url":""
+                }
+                
+            },
+            {
+                "Лечение чего-то 3":{
+                    "type":"active/unactive",
+                    "url":""
+                }
+                
+            }
+        ]
+    }
+}
+
