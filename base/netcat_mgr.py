@@ -10,6 +10,7 @@ class NetcatManager:
 
     def set_main_url(self,__main_url):
         self.__main_url = __main_url
-    
-    def open_netcat(self):
+    def get_main_url(self):
+        return self.__main_url
+    def open(self):
         self.driver.get(self.__main_url)

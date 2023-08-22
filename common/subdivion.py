@@ -1,70 +1,101 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-# SUBDIVISIONS
+from common.controllers import JSONElement, JSONController
+from undetected_chromedriver import Chrome
 
 
-class HasMainElement:
-    def __init__(self, main_id):
-        self.set_main_menu_el(main_id)
+###########################     Finder
 
-    def set_main_menu_el(self, id):
-        main_menu_id = id
-        main_xpath = f"//ul[@id='siteTree_site-{main_menu_id}_children']"
-        WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.XPATH, main_xpath)))
-        try:
-            self.main_menu_el = self.driver.find_element(
-            By.XPATH, main_xpath)
-        except:
-            print(f"Гланый элемент с id = {id} не найден")
+class IFinder:
+    def get_ul_by_id(self, el_id:int, driver: Chrome, url: str): raise NotImplementedError
 
 
-class Subdivision():
-    def __init__(self,driver, name, url, main_element) -> None:
-        self.driver = driver
-        self.name = name
-        self.url = url
-        #id regexp: "[0-9]{1,}"g
-        try:
-            self.li_element = self.main_menu_el.find_element(
-                By.XPATH, f".//a[@title = '{self.name}']/parent::li")
-        except:
-            print(f"Элемент: '{name}' не найден")
+class SiteListFinder(IFinder):
+    def get_ul_by_id(self, el_id: int, driver: Chrome, url: str):
+        driver.get(url)
+        return driver.find_element(By.XPATH, f"//ul[@id='siteTree_site-{el_id}_children']")
 
-    def expand(self):
-        try:
-            self.li_element.driver.find_element(
-                By.XPATH, ".//img[@alt='Раскрыть список']").click()
-        except:
-            return
+
+class SubsListFinder(IFinder):
+    def get_ul_by_id(self, el_id: int, driver: Chrome, url: str):
+        driver.get(url)
+        return driver.find_element(By.XPATH, f"//ul[@id='siteTree_sub-{el_id}_children']" )
+
+
+###########################     Reader
+
+class IReader:
+    def get_data(self): raise NotImplementedError
+
+class Reader(IReader):
+    def get_data(self):
+        pass
+
+
+class JsonReader(Reader): 
+    def __init__(self, element_name: str, filepath: str, json_controller: JSONController) -> None:
+        self.element_name = element_name
+        self.filepath = filepath
+        self.json_controller = json_controller
+
+    def get_data(self) -> dict:
+        return self.json_controller.find_element(JSONElement, self.element_name, self.filepath)
         
-    def open_url(self):
-        self.driver.get(self.url)
 
-    def click():
-        pass
+class WebReader(Reader): 
+    def __init__(self, driver:Chrome) -> None:
+        self.driver = Chrome
 
+    def set_element(self, chrome_element):
+        self.element = chrome_element
 
-class SubdivisionCollector(HasMainElement):
-    def __init__(self, driver, main_id):
+    def get_data(self) -> dict:
+        to_json = {}
+        to_json[self.__get_title].update(
+            {
+                "type":self.__get_type(),
+                "url":self.__get_link()
+            }
+        )
+        return to_json
+
+    def __get_link(self) -> str:
+        self.element.click()
+        return self.driver.current_url
+
+    def __get_title(self) -> str:
+        return self.element.get_attribute("title")
+
+    def __get_type(self) -> str:
+        element_class = self.element.get_attribure("class")
+        if "active" in element_class:
+            return "active"
+        if "unactive" in element_class:
+            return "unactive"
+        else:
+            return "undefined"
+
+###########################     Subdivision
+
+class Subdivsion:
+    pass
+
+# ".//img[@alt='Раскрыть список']"
+# ".//a[@title = '{name}']/parent::li"
+
+class SubdivisionCollector:
+    def __init__(self, finder: IFinder, driver:Chrome, url: str) -> None:
         self.driver = driver
-        super().__init__(main_id)
+        self.finder = finder
+        self.url = url
+        self.start_element = self.finder.get_ul_by_id(1, self.driver, self.url)
+        
+    def get_info(self, reader: IReader):
+        for element in self.collect_all_elements():
+            reader.set_element(element)
+            return reader.get_data()
 
-
-    def collect_all_names(self):
-        els = self.main_menu_el.find_elements(By.XPATH,".//a[contains(@class,'menu_left_a')]")
-        for el in els:
-            print(el.get_attribute("title"),end=" ")
-
-    def collect_all_url():
-        pass
-
-    def expand_all(self):
-        try:
-            all_expand_btns = self.main_menu_el.find_elements(
-                By.XPATH, ".//img[@alt='Раскрыть список']")
-            for btn in all_expand_btns:
-                btn.click()
-        except:
-            return
-
+    def collect_all_elements(self):
+        return self.start_element.find_elements(By.XPATH(".//a[contains(@class,'menu_left_a')]"))
+    

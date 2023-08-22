@@ -1,19 +1,22 @@
 from base.netcat_mgr import NetcatManager
 from selenium_mgr import SeleniumChromeProfile
-
 from selenium.webdriver.common.by import By
-main
 from time import sleep
-from controllers.controllers import AreaController, SubdivisionCollector
-
-driver = SeleniumChromeProfile()
-nc = NetcatManager(driver=driver.driver)
+from common.subdivion import SubdivisionCollector, WebReader, SiteListFinder
 
 
-nc.set_main_url("https://garmonia-stacionar.ru/netcat/admin/#site.map(1)")
-nc.open_netcat()
-nc.left.to_frame()
+driver = SeleniumChromeProfile().get_driver()
+netcat = NetcatManager(driver=driver)
 
-collector = SubdivisionCollector(driver.driver,1)
-sleep(10)
-main
+
+netcat.set_main_url("https://garmonia-stacionar.ru/netcat/admin/#site.map(1)")
+netcat.open()
+sleep(5)
+netcat.left.to_frame()
+
+site_finder = SiteListFinder
+web_reader = WebReader(driver=driver)
+
+collector = SubdivisionCollector(site_finder , driver=driver, url=netcat.get_main_url())
+
+collector.get_info(WebReader(driver=driver))

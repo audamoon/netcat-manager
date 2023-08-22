@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-from controllers.controllers import JSONController
+from  common.controllers import JSONController
 
 class Block:
     driver = None
@@ -11,7 +11,7 @@ class Block:
         self.driver.find_element(By.XPATH,_xpath).click()
 
 class ModalWindow(Block):
-    __json_controller = JSONController("json/fields.json")
+    __json_controller = JSONController()
 
     def __init__(self, driver) -> None:
         self.driver = driver

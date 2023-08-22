@@ -1,6 +1,6 @@
 from typing import Any
 from common.block import ModalWindow,MenuSwitcher
-from controllers.controllers import AreaController, SubdivisionCollector
+from  common.controllers import AreaController
 from time import sleep
 
 #Класс-родитель
@@ -30,7 +30,7 @@ class DefaultFrame(Frame):
         super().__init__(driver)
         self.__modal = ModalWindow(self.driver)
         self.__menu = MenuSwitcher(self.driver)
-        self.area = AreaController(self.driver,self)
+        self.area = AreaController(self.driver)
 
     def to_frame(self):
         self.driver.switch_to.default_content()
