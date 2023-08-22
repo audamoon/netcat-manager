@@ -15,7 +15,8 @@
             {
                 "Лечение чего-то 2":{
                     "type":"active/unactive",
-                    "url":""
+                    "url":"",
+                    "text_id":""    
                 }
                 
             },
