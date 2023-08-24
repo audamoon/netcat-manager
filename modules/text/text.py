@@ -66,7 +66,7 @@ class TextController:
             text_object = Text(self.texts[i][0])
             json_fin[f"text-{i}"] = text_object.garmonia()
 
-        with open("result.json", "w",encoding="UTF-8") as f:
+        with open("json/result.json", "w",encoding="UTF-8") as f:
             json.dump(json_fin,f, ensure_ascii=False)
 
 
@@ -115,7 +115,7 @@ class TextDivider:
             texts.append(together)
         return texts
 
-divider = TextDivider("garmoni.docx")
+divider = TextDivider("temp/garmoni.docx")
 controller = TextController(divider.complete_divide())
 controller.get_right_json()
 

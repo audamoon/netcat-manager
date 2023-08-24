@@ -1,114 +1,497 @@
 {
     "14. Главная страница": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(14)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(14)",
+        "id": "14"
     },
     "13. Поиск": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(10)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(10)",
+        "id": "13"
     },
     "37. О клинике": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(35)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(35)",
+        "id": "37"
     },
     "52. Новости": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(50)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(50)",
+        "id": "52"
     },
     "49. Наши документы и лицензии": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(47)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(47)",
+        "id": "49"
     },
     "84. Фотогалерея": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(84)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(84)",
+        "id": "84"
     },
     "39. Отзывы": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(37)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(37)",
+        "id": "39"
     },
     "21. Врачи": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(19)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(19)",
+        "id": "21"
     },
     "20. Услуги": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(18)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(18)",
+        "id": "20",
+        "subdivisions": {
+            "90. Лечение алкоголизма": {
+                "type": "active",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(97)",
+                "id": "90",
+                "subdivisions": {
+                    "100. Вывод из запоя": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(106)",
+                        "id": "100"
+                    },
+                    "92. Лечение алкогольной зависимости": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(107)",
+                        "id": "92"
+                    },
+                    "93. Лечение похмелья": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(110)",
+                        "id": "93"
+                    },
+                    "94. Реабилитация алкоголизма": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(112)",
+                        "id": "94"
+                    },
+                    "95. Кодирование от алкоголизма": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(109)",
+                        "id": "95"
+                    },
+                    "96. Вшивание торпеды от алкоголизма": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(108)",
+                        "id": "96"
+                    },
+                    "97. Вшивание Эспераль": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(113)",
+                        "id": "97"
+                    },
+                    "99. Раскодирование от алкоголизма": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(111)",
+                        "id": "99"
+                    },
+                    "157. Принудительное лечение алкоголизма": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(168)",
+                        "id": "157"
+                    },
+                    "158. Лечение женского алкоголизма": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(169)",
+                        "id": "158"
+                    },
+                    "159. Лечение алкоголизма амбулаторно": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(170)",
+                        "id": "159"
+                    },
+                    "160. Лечение алкоголизма в стационаре": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(171)",
+                        "id": "160"
+                    },
+                    "161. Лечение подросткового алкоголизма": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(172)",
+                        "id": "161"
+                    },
+                    "162. Лечение алкоголизма на дому": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(173)",
+                        "id": "162"
+                    },
+                    "163. Мотивация на лечение алкоголизма": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(174)",
+                        "id": "163"
+                    },
+                    "169. Лечение Плазмаферезом": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(180)",
+                        "id": "169"
+                    },
+                    "170. Чистка крови от алкоголя": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(181)",
+                        "id": "170"
+                    }
+                }
+            },
+            "101. Капельницы": {
+                "type": "active",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(99)",
+                "id": "101",
+                "subdivisions": {
+                    "102. Капельница от запоя": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(101)",
+                        "id": "102"
+                    },
+                    "103. Капельницы при алкогольной интоксикации": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(102)",
+                        "id": "103"
+                    }
+                }
+            },
+            "104. Лечение наркомании": {
+                "type": "active",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(103)",
+                "id": "104",
+                "subdivisions": {
+                    "105. УБОД": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(104)",
+                        "id": "105"
+                    },
+                    "106. Снятие ломки": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(105)",
+                        "id": "106"
+                    },
+                    "194. Лечение подростковой наркомании": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(205)",
+                        "id": "194"
+                    },
+                    "195. Принудительное лечение наркомании": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(206)",
+                        "id": "195"
+                    },
+                    "196. Кодирование наркоманов": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(207)",
+                        "id": "196"
+                    },
+                    "197. Детоксикация от наркотиков": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(208)",
+                        "id": "197"
+                    },
+                    "198. Детоксикация на дому": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(209)",
+                        "id": "198"
+                    },
+                    "199. Каннабиоидная детоксикация": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(210)",
+                        "id": "199"
+                    },
+                    "200. Капельница от наркотиков": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(211)",
+                        "id": "200"
+                    },
+                    "201. Снятие ломки в стационаре": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(212)",
+                        "id": "201"
+                    },
+                    "202. Лечение зависимости от Солей": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(213)",
+                        "id": "202"
+                    },
+                    "203. Лечение зависимости от Бутиратов": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(214)",
+                        "id": "203"
+                    },
+                    "204. Лечение зависимости от Героина": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(215)",
+                        "id": "204"
+                    },
+                    "205. Лечение зависимости от Спайса": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(216)",
+                        "id": "205"
+                    },
+                    "206. Лечение зависимости от Метадона": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(217)",
+                        "id": "206"
+                    },
+                    "207. Лечение зависимости от Кокаина": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(218)",
+                        "id": "207"
+                    },
+                    "208. Лечение зависимости от Феназепама": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(219)",
+                        "id": "208"
+                    },
+                    "209. Лечение зависимости от Амфетамина": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(220)",
+                        "id": "209"
+                    },
+                    "210. Лечение зависимости от Гашиша": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(221)",
+                        "id": "210"
+                    },
+                    "211. Лечение зависимости от Лирики": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(222)",
+                        "id": "211"
+                    },
+                    "212. Лечение зависимости от Мефедрона": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(223)",
+                        "id": "212"
+                    },
+                    "213. Лечение зависимости от Каннабиноидов": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(224)",
+                        "id": "213"
+                    },
+                    "214. Лечение зависимости от ЛСД": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(225)",
+                        "id": "214"
+                    },
+                    "215. Лечение зависимости от Экстази": {
+                        "type": "unactive",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(226)",
+                        "id": "215"
+                    }
+                }
+            },
+            "131. Психиатрия": {
+                "type": "active",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(142)",
+                "id": "131",
+                "subdivisions": {
+                    "132. Лечение фобий": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(143)",
+                        "id": "132"
+                    },
+                    "133. Лечение истерических расстройств": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(144)",
+                        "id": "133"
+                    },
+                    "134. Лечение энкопреза": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(145)",
+                        "id": "134"
+                    },
+                    "135. Лечение детских неврозов": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(146)",
+                        "id": "135"
+                    },
+                    "136. Лечение дереализации": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(147)",
+                        "id": "136"
+                    },
+                    "137. Лечение половых расстройств": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(148)",
+                        "id": "137"
+                    },
+                    "138. Психиатр на дом": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(149)",
+                        "id": "138"
+                    },
+                    "139. Лечение психоза": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(150)",
+                        "id": "139"
+                    },
+                    "140. Лечение шизофрении": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(151)",
+                        "id": "140"
+                    },
+                    "141. Лечение галлюцинаций": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(152)",
+                        "id": "141"
+                    },
+                    "142. Лечение мании преследования": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(153)",
+                        "id": "142"
+                    },
+                    "143. Лечение бредового расстройства": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(154)",
+                        "id": "143"
+                    },
+                    "144. Лечение деперсонализации": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(155)",
+                        "id": "144"
+                    },
+                    "145. Лечение суицидального поведения": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(156)",
+                        "id": "145"
+                    },
+                    "146. Лечение эпилепсии": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(157)",
+                        "id": "146"
+                    },
+                    "147. Лечение синдрома Мюнхгаузена": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(158)",
+                        "id": "147"
+                    },
+                    "148. Лечение синдрома дромомании": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(159)",
+                        "id": "148"
+                    },
+                    "149. Лечение абулии": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(160)",
+                        "id": "149"
+                    },
+                    "150. Лечение кататонии": {
+                        "type": "active",
+                        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(161)",
+                        "id": "150"
+                    }
+                }
+            },
+            "152. Реабилитация": {
+                "type": "unactive",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(163)",
+                "id": "152"
+            },
+            "164. Вывод из запоя": {
+                "type": "unactive",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(175)",
+                "id": "164"
+            },
+            "166. Кодирование": {
+                "type": "unactive",
+                "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(177)",
+                "id": "166"
+            }
+        }
     },
     "88. Цены": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(92)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(92)",
+        "id": "88"
     },
     "19. Курсы лечения": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(90)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(90)",
+        "id": "19"
     },
     "35. Страница статьи": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(103)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(33)",
+        "id": "35"
     },
     "18. Контакты": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(16)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(16)",
+        "id": "18"
     },
     "24. Заявка": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(22)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(22)",
+        "id": "24"
     },
     "38. Полезная информация": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(36)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(36)",
+        "id": "38"
     },
     "53. Контролирующие органы": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(51)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(51)",
+        "id": "53"
     },
     "82. Информирование граждан": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(81)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(81)",
+        "id": "82"
     },
     "68. Реквизиты": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(66)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(66)",
+        "id": "68"
     },
     "16. Соглашение об использовании сайта": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#subdivision.design(16)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#subdivision.design(16)",
+        "id": "16"
     },
     "69. Политика конфиденциальности": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(67)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(67)",
+        "id": "69"
     },
     "15. Страница не найдена (ошибка 404)": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#subdivision.design(15)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#subdivision.design(15)",
+        "id": "15"
     },
     "87. Карта сайта": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(91)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(91)",
+        "id": "87"
     },
     "85. Оставить отзыв": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(85)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(85)",
+        "id": "85"
     },
     "107. Приватные отзывы": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(114)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(114)",
+        "id": "107"
     },
     "108. Поиск по сайту": {
         "type": "active",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(115)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(115)",
+        "id": "108"
     },
     "126. Лендинг-терапия": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(131)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(131)",
+        "id": "126"
     },
     "128. Лендинг-наркология": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(137)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(137)",
+        "id": "128"
     },
     "130. Отзывы наркология": {
         "type": "unactive",
-        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(135)"
+        "url": "https://garmonia-stacionar.ru/netcat/admin/#object.list(135)",
+        "id": "130"
     }
 }

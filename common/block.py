@@ -18,7 +18,7 @@ class ModalWindow(Block):
 
     def open(self):
         open_btn_xpath = "//i[@class='nc-icon nc--edit']/parent::a"
-        WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.XPATH, open_btn_xpath)))
+        WebDriverWait(self.driver,3).until(EC.presence_of_element_located((By.XPATH, open_btn_xpath)))
         self.driver.find_element(By.XPATH,open_btn_xpath).click()
 
     def save(self):
