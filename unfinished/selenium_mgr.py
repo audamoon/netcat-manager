@@ -17,17 +17,3 @@ class SeleniumChromeProfile():
     
     def __call__(self):
         return self.driver
-
-# class SeleniumManager:
-
-#     def __init__(self) -> None:
-#         self.driver = SeleniumChromeProfile()
-
-#     def wait_until_presence(self,__xpath,__time=600):
-#         WebDriverWait(self,__time).until(EC.presence_of_element_located((By.XPATH, __xpath)))
-
-#     def find_element_by_xpath(self,__xpath):
-#         return self.find_element(By.XPATH,__xpath)
-
-#     def find_all_by_xpath(self,__xpath):
-#         return self.find_elements(By.XPATH,__xpath)

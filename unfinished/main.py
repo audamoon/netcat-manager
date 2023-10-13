@@ -2,7 +2,7 @@ from base.netcat_mgr import NetcatManager
 from selenium_mgr import SeleniumChromeProfile
 
 from selenium.webdriver.common.by import By
-main
+
 from time import sleep
 from controllers.controllers import AreaController, SubdivisionCollector
 
@@ -16,4 +16,4 @@ nc.left.to_frame()
 
 collector = SubdivisionCollector(driver.driver,1)
 sleep(10)
-main
+
